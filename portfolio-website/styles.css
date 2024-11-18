@@ -1,0 +1,632 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    color: #00bcd4;
+}
+
+.hero-text h2 {
+    font-size: px; 
+    margin: 0;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    line-height: 1.6; 
+}
+
+
+
+
+
+
+/* Social icons styles */
+
+.social-icons a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6); 
+    font-size: 24px;
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: white; 
+}
+
+
+.social-icons {
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+.download-btn {
+    margin-top: 300px;
+    padding: 10px 40px;
+    background-color: #00bcd4; /* Initial background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.download-btn:hover {
+    background-color: #008c9e; 
+    transform: scale(1.05); 
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: glow 1.5s infinite alternate; 
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Keyframe for glowing effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00bcd4;
+    }
+    100% {
+        box-shadow: 0 0 20px #00bcd4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    position: relative; /* Added for absolute positioning of balls */
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6; 
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20% 20%, #00bcd4, #005b66);
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+    position: absolute;
+    animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.ball1 { top: 50px; left: 50px; }
+.ball2 { top: 100px; left: 150px; }
+.ball3 { top: 200px; left: 100px; }
+.ball4 { top: 250px; left: 250px; }
+.ball5 { top: 300px; left: 200px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #2b2b2b; 
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; 
+    line-height: 1.6; 
+}
+
+.service-card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: white;
+}
+
+.service-card:hover {
+    background-color: #00bcd4;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.5);
+}
+
+/* Change headline color to black on hover */
+.service-card:hover h3 {
+    color: black; 
+}
+
+
+
+
+
+/* Skills Section */
+.skills {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #00bcd4; 
+    margin-bottom: 20px;
+    line-height: 1.6; 
+}
+
+.skills p {
+    font-size: 1.1rem;
+    color: #ffffff; 
+    margin-bottom: 40px;
+    line-height: 1.8; 
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.skill-card {
+
+    background-color: #2b2b2b; 
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; 
+    line-height: 1.6; 
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Icon color matches heading */
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: #00bcd4; /* Blue for heading */
+    margin-bottom: 10px;
+    line-height: 1.4; /* Adjusted line height for card headings */
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #ffffff; /* White color for description */
+    line-height: 1.5; /* Added more line spacing for card descriptions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Section Container */
+.projects-container {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+}
+
+/* Projects Section Heading */
+.projects-container h1 {
+    color: #00bcd4;
+    margin-bottom: 40px;
+}
+
+/* Project Cards Container */
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+    align-items: flex-start; /* Align cards to the top */
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 50px;
+    width: 60%; /* Adjust width to 45% for two cards next to each other */
+    height: fit-content;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transition for border color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Card Heading */
+.project-card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+/* Project Card Description */
+.project-card p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 40px;
+     
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.5);
+    border: 3px solid #00bcd4; /* Light blue border on hover */
+}
+
+/* Project Card Image Container */
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+/* Large Image */
+.large-image {
+    width: 68%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.large-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Large Image Hover Effect */
+.large-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.8);
+}
+
+/* Small Images Container */
+.small-images {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Small Images */
+.project-small-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Small Image Hover Effect */
+.project-small-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Text content styling for Project Card */
+.project-card h3 {
+    color: #00bcd4;
+    margin: 20px;
+}
+
+/* Project Links and Buttons */
+.project-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Base Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+}
+
+/* Behance Button */
+.behance-btn {
+    background-color: #1769ff;
+}
+
+.behance-btn:hover {
+    background-color: #0f4ccc;
+    transform: scale(1.05);
+}
+
+/* Dribbble Button */
+.dribbble-btn {
+    background-color: #ea4c89;
+}
+
+.dribbble-btn:hover {
+    background-color: #c03568;
+    transform: scale(1.05);
+}
+
+/* Hover effect for Project Cards - Border Lighting */
+.project-card:hover {
+    border: 3px solid #00bcd4; /* Add a light blue border */
+}
+
+/* Responsive: Adjust cards on smaller screens */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+/* Lightbox styling */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00bcd4;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: #00bcd4;
+}
+
+/* Updated styles for icons */
+.social-icons a {
+    margin: 10px 10px;
+    font-size: 20px; /* Adjust icon size here */
+    color: #ddd;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #00bcd4;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #bbb;
+}

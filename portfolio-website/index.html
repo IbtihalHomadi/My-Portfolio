@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Portfolio.</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hello, It's Me</h1>
+            <h2>Ibtihal Homadi</h2>
+            <h3> <span style="color: #00bcd4;">UX/UI Designer & App programmer</span></h3>
+            <p>I craft experiences where beauty meets purpose :)
+                 
+                <br>I create purposeful, elegant designs that go beyond aesthetics to solve real-world challenges and elevate the user experience. With a blend of creativity and user-centered strategy, I design digital journeys that are intuitive, seamless, and impactful.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ibtihal_homadi/profilecard/?igsh=MWtjb3QxaXVrYWRvaA==" class="fab fa-instagram"></a>
+                <a href="https://www.behance.net/ibtihalhomadi" class="fab fa-behance"></a>
+                <a href="https://dribbble.com/ibtihal_homadi" class="fab fa-dribbble"></a>
+                <a href="http://Wa.me/+967778541657" class="fab fa-whatsapp"></a>
+            </div>
+            <a href="#" class="download-btn">Download CV</a>
+        </div>
+
+        <div class="profile-image">
+            <img src="images/Mine.JPG" alt="Profile">
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I’m a UX/UI Designer and a Computer Science graduate from Sanaa University. Currently, I specialize in Flutter for mobile app development, creating intuitive and visually appealing digital experiences. My focus is on designing seamless, user-centered solutions that make an impact.</p>
+        <p>I'm a passionate UX/UI designer with experience in creating user-friendly interfaces and engaging experiences.</p>
+        <!-- 3D Blue Balls -->
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+        <div class="ball ball5"></div>
+    </section>
+
+    <section class="services">
+        <h2>My Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>UX/UI Design</h3>
+                <p>Crafting intuitive and engaging user experiences.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mobile App Development</h3>
+                <p>Building responsive and functional mobile applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>Frappe System</h3>
+                <p>Implementing customized solutions using the Frappe framework.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <p>Here are some of the skills I have honed over the years in my career.</p>
+        <div class="skill-cards">
+            <!-- Skill 1: Python (Analysis) -->
+            <div class="skill-card">
+                <i class="fab fa-python"></i> <!-- Font Awesome Icon for Python -->
+                <h3>Python (Analysis)</h3>
+                <p>Skilled in Python programming with a focus on data analysis, scripting, and automation.</p>
+            </div>
+    
+            <!-- Skill 2: UX/UI Design -->
+            <div class="skill-card">
+                <i class="fas fa-pencil-ruler"></i> <!-- Font Awesome Icon for Design -->
+                <h3>UX/UI Design</h3>
+                <p>Designing user-friendly interfaces with a focus on usability and aesthetics for web and mobile apps.</p>
+            </div>
+    
+            <!-- Skill 3: Frappe Systems -->
+            <div class="skill-card">
+                <i class="fas fa-cogs"></i> <!-- Font Awesome Icon for Gear -->
+                <h3>Frappe Systems</h3>
+                <p>Implementing customized solutions using the Frappe framework for web applications and ERP systems.</p>
+            </div>
+    
+            <!-- Skill 4: Mobile Development with Flutter -->
+            <div class="skill-card">
+                <i class="fab fa-android"></i> <!-- Font Awesome Icon for Android (for Flutter) -->
+                <h3>Mobile Development (Flutter)</h3>
+                <p>Building cross-platform mobile applications using Flutter for both iOS and Android.</p>
+            </div>
+    
+            <!-- Skill 5: Figma -->
+            <div class="skill-card">
+                <i class="fab fa-figma"></i> <!-- Font Awesome Icon for Figma -->
+                <h3>Figma</h3>
+                <p>Expert in designing and prototyping with Figma for seamless UX/UI workflows.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    
+
+
+
+
+    <div class="projects-container" id="projects">
+        <h1 class="section-title">Projects</h1>
+        <div class="project-cards">
+            <!-- First Project -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="project-title">Project Title 1</h2>
+                    <p class="project-description">
+                        A brief description of the first project goes here. Highlight key features, goals, or any other important details to make it engaging and informative.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="large-image">
+                        <img src="images/Behance Cover.png" alt="Large Image" onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="small-images">
+                        <img class="project-small-image" src="images/Landing page.png" alt="Small Image 1" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="small-picture2.jpg" alt="Small Image 2" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="small-picture3.jpg" alt="Small Image 3" onclick="openLightbox(this.src)">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.behance.net" target="_blank" class="button behance-btn">View on Behance</a>
+                    <a href="https://dribbble.com" target="_blank" class="button dribbble-btn">View on Dribbble</a>
+                </div>
+            </div>
+    
+            <!-- Second Project -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="project-title">Snadwichina</h2>
+                    <p class="project-description">
+                        The Custom Sandwich App is a user-centric mobile application that allows users to create personalized sandwiches by selecting ingredients, customizing options, and placing orders seamlessly.
+                         <br>The app aims to provide an engaging and intuitive experience that makes sandwich customization easy, fun, and efficient.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="large-image">
+                        <img src="images/Sandwich Main.jpg" alt="Large Image" onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="small-images">
+                        <img class="project-small-image" src="images/Sandwich UX.jpg" alt="Small Image 1" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="images/Sandwich Screen View.jpg" alt="Small Image 2" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="images/Sandwich 3.jpg" alt="Small Image 3" onclick="openLightbox(this.src)">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.behance.net" target="_blank" class="button behance-btn">View on Behance</a>
+                    <a href="https://dribbble.com" target="_blank" class="button dribbble-btn">View on Dribbble</a>
+                </div>
+            </div>
+    
+            <!-- Third Project (Existing) -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 class="project-title">Project Title 3</h2>
+                    <p class="project-description">
+                        A brief description of the third project goes here. Highlight key features, goals, or any other important details to make it engaging and informative.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="large-image">
+                        <img src="images/Behance Cover.png" alt="Large Image" onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="small-images">
+                        <img class="project-small-image" src="images/Landing page.png" alt="Small Image 1" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="small-picture2.jpg" alt="Small Image 2" onclick="openLightbox(this.src)">
+                        <img class="project-small-image" src="small-picture3.jpg" alt="Small Image 3" onclick="openLightbox(this.src)">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.behance.net" target="_blank" class="button behance-btn">View on Behance</a>
+                    <a href="https://dribbble.com" target="_blank" class="button dribbble-btn">View on Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn" onclick="closeLightbox()">X</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+    
+
+    <!-- Link to external JS file -->
+    <script src="main.js"></script>
+
+
+
+    
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Me</h3>
+                <p>Email: <a href="mailto:ibtihal@example.com">ibtihalhomadi@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+967 783 414 928</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons"> <!-- Updated class name here -->
+                    <a href="https://www.instagram.com/ibtihal_homadi/profilecard/?igsh=MWtjb3QxaXVrYWRvaA==" class="fab fa-instagram"></a>
+                    <a href="https://www.behance.net/ibtihalhomadi" class="fab fa-behance"></a>
+                    <a href="https://dribbble.com/ibtihal_homadi" class="fab fa-dribbble"></a>
+                    <a href="http://Wa.me/+967778541657" class="fab fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ibtihal Homadi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
